@@ -183,14 +183,13 @@
       </div>
       <br><br>
       <div class="container is-max-desktop">
-        <img src="static\img\fig-deform_init1and2_00.png" alt="Image description" style="display: block; margin: auto;">
+        <img src="static\images\pipeline.png" alt="Image description" style="display: block; margin: auto;">
         <p>
-          <strong>Fig 2.</strong><strong>(a) Initialization of the deformation field.</strong> We first lift the depth
-          maps and a 2D flow to a
-          3D flow and train the deformation field for initialization.
-          <strong>(b) Initialization of Gaussians in the canonical space.</strong> We use the initialized deformation
-          field to deform all the depth points to the canonical space and
-          downsample these depth points to initialize Gaussians.
+          <strong>Fig 2.</strong><strong>We propose a learning-based method to enhance underwater 4-D LF images. 
+            Our key innovation lies in that depth estimation and enhancement results promote each other. 
+            The method enhances 4-D LF images by iterating multiple stages with both explicit and implicit geometric information. 
+            Specifically, we utilize the estimated depth maps from 4-D LF images to modulate the features. 
+            The geometric information extracted from epipolar plane image (EPI) features can also help adjust the spatial and angular features.
         </p>
       </div>
       <br><br>
