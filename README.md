@@ -1,6 +1,6 @@
 # LFUIE
 
-This is the repository that contains source code for the [LFUIE](https://LFUIE.github.io).
+This is the repository that contains source code for the [LFUIE](https://linlos1234.github.io/LFUIE.github.io/).
 
 If you find Nerfies useful for your work please cite:
 ```
