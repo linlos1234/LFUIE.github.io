@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Enhancing Underwater Imaging with 4-D Light Fields: Dataset and Method">
+  <meta name="keywords" content="Light Field, UIE, dataset">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Enhancing Underwater Imaging with 4-D Light Fields: Dataset and Method</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
+
   <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -42,6 +28,227 @@
 </head>
 <body>
 
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 class="title is-1 publication-title">Enhancing Underwater Imaging with 4-D Light Fields: Dataset and Method</h1>
+            <!-- <h3 class="title is-1 publication-title">Anonymous Authors</h3> -->
+            <div class="is-size-4 publication-authors">
+
+<!--                <span class="author-block">
+                Anonymous Authors</span> -->
+              <span class="author-block">
+                <h6>
+                  <a href="" target="_blank">Yuji Lin</a><sup>1</sup>,
+                  <a href="" target="_blank">Junhui Hou</a><sup>1&dagger;</sup>,
+                  <a href="" target="_blank">Xianqiang Lyu</a><sup>1</sup>,
+                  <a href="" target="_blank">Qian Zhao</a><sup>1&dagger;</sup>,
+                  <a href="" target="_blank">Deyu Meng</a><sup>1</sup>,
+                </h6>
+              </span>
+
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="static/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+
+                    <svg class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                      </path>
+                    </svg>
+                    <span>Video [coming soon] </span>
+                  </a>
+                </span>
+                <!--
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+-->
+                <span class="link-block">
+                  <a href="https://github.com/MoDGS/MoDGS.git" class="external-link button is-normal is-rounded is-dark" title="Code">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+<!--                     <span>Code and data [coming soon</span> -->
+                             <span>Code and data </span>
+                  </a>
+                </span>
+
+                <!--
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark" title="Coming soon!" disabled>
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                    </a>
+                  </span> -->
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Abstract -->
+  <!-- Abstract -->
+  <!-- Abstract -->
+  <!-- <section class="section"> -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+          In this paper, we delve into the realm of 4-D light fields (LFs) to enhance underwater imaging plagued by light absorption, scattering, and other challenges. 
+          Contrasting with conventional 2-D RGB imaging, 4-D LF imaging excels in capturing scenes from multiple perspectives, thereby indirectly embedding geometric information. 
+          This intrinsic property is anticipated to effectively address the challenges associated with underwater imaging. 
+          By leveraging both explicit and implicit depth cues present in 4-D LF images, we propose a progressive, mutually reinforcing framework for underwater 4-D LF image enhancement and depth estimation. 
+          The entire framework decomposes this complex task, iteratively optimizing the enhanced image and depth information to progressively achieve optimal enhancement results. 
+          More importantly, we construct the first 4-D LF-based underwater image dataset for quantitative evaluation and supervised training of learning-based methods, comprising 75 underwater scenes with multiple views and 3675 high-resolution 2K pairs.
+          To craft vibrant and varied underwater scenes, we build underwater environments with various objects and adopt several types of degradation. 
+          Through extensive experimentation, we showcase the potential and superiority of 4-D LF-based underwater imaging vis-a-vis traditional 2-D RGB-based approaches. 
+          Moreover, our method effectively corrects color bias and achieves state-of-the-art performance. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- dataset -->
+  <!-- dataset -->
+  <!-- dataset -->
+  <section>
+    <!-- </div> -->
+    <h2 style="text-align: center;" class="is-size-4">Dataset samples, </h2>
+    <h2 style="text-align: center;" class="is-size-4">MoDGS is able to learn a dynamic Gaussian Splatting representation
+      for novel-view synthesis</h2>
+    <div class="container is-max-desktop">
+      <!-- <h2 class="title is-4">Results on DyNeRF dataset</h2> -->
+      <!-- <p>
+          Here we display results of our MoDGS On DyNeRF dataset. <br><br>
+          Change the scene by clicking the button below:
+        </p> -->
+    </div>
+
+    <!-- <section class="hero is-light is-small"> -->
+    <div class="hero-body">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <!-- <div class="container"> -->
+      <div id="results-carousel" class="carousel results-carousel">
+    </div>
+  </section>
+
+
+
+  
+<!-- Method -->
+<!-- Method -->
+<!-- Method -->
+<section class="section">
+    <div class="container is-max-desktop">
+
+      <h2 class="title is-3">Method</h2>
+      <div class="container is-max-desktop">
+        <img src="static\img\fig-overview_00.png" alt="Image description" style="display: block; margin: auto;">
+        <p>
+          <strong>Fig 1.</strong><strong>Overview.</strong> Given a casually captured monocular video of a dynamic
+          scene, MoDGS represents the
+          dynamic scene with a set of Gaussians in a canonical
+          space and a deformation field represented by an MLP network T. To render an image at a specific timestep 𝑡,
+          we deform all the Gaussians by T𝑡 and then use
+          the splatting technique to render images and depth maps. While in training MoDGS, we use a single-view depth
+          estimator GeoWizard [Fu et al. 2024] to
+          estimate a depth map for every frame and compute the rendering loss and an ordinal depth loss to learn MoDGS.
+        </p>
+      </div>
+      <br><br>
+      <div class="container is-max-desktop">
+        <img src="static\img\fig-deform_init1and2_00.png" alt="Image description" style="display: block; margin: auto;">
+        <p>
+          <strong>Fig 2.</strong><strong>(a) Initialization of the deformation field.</strong> We first lift the depth
+          maps and a 2D flow to a
+          3D flow and train the deformation field for initialization.
+          <strong>(b) Initialization of Gaussians in the canonical space.</strong> We use the initialized deformation
+          field to deform all the depth points to the canonical space and
+          downsample these depth points to initialize Gaussians.
+        </p>
+      </div>
+      <br><br>
+      <div class="container is-max-desktop">
+        <img src="static\img\fig-depthoderloss_00.png" alt="Image description" width=50%
+          style="display: block; margin: auto;">
+        <p>
+          <strong>Fig 3.</strong> We show the estimated single-view depth maps at two different timesteps 𝐷𝑡𝑖
+          and 𝐷𝑡𝑗 after normalization to the same scale. Since the
+          single-view depth estimator is not accurate enough, the depth maps are
+          not linear related so the scale normalization does not perfectly align them.
+          However, the order of depth values on three corresponding pixels is stable
+          for these two depth maps, which motivates us to propose an ordinal depth loss for supervision.
+        </p>
+        <p class="title is-6"><span style="color:red;">Please See our video results above ,our rendered depth videos are
+            more consistent and stable than the inputs.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
