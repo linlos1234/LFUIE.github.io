@@ -1,14 +1,15 @@
 # LFUIE
 
-This is the repository that contains source code for the [LFUIE](https://nerfies.github.io).
+This is the repository that contains source code for the [LFUIE](https://LFUIE.github.io).
 
 If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{lin2025enhancing,
+  title={Enhancing underwater imaging with 4-D light fields: Dataset and method},
+  author={Lin, Yuji and Hou, Junhui and Lyu, Xianqiang and Zhao, Qian and Meng, Deyu},
+  journal={IEEE Journal of Selected Topics in Signal Processing},
+  year={2025},
+  publisher={IEEE}
 }
 ```
 
